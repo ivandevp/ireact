@@ -1,11 +1,21 @@
-class HelloWorld {
+import iReact from '../../lib/iReact';
+
+class HelloWorld extends iReact.Component {
   constructor(props) {
-    this.props = props;
+    super(props);
+
+    this.state = {
+      name: props.name
+    };
   }
 
   render() {
+    this.setState({
+      name: 'Laboratoria'
+    });
+
     return `
-      <h1>Hola ${this.props.name}</h1>
+      <h1>Hola ${this.state.name}</h1>
     `;
   }
 }
