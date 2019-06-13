@@ -1,7 +1,4 @@
 import iReactDOM from '../lib/iReact.DOM';
-import HelloWorld from './components/HelloWorld';
+import DynamicHelloWorld from './components/DynamicHelloWorld';
 
-iReactDOM.render(
-  new HelloWorld({ name: 'Ivan' }),
-  document.querySelector('#root')
-);
+iReactDOM.render(new DynamicHelloWorld(), document.querySelector('#root'));
