@@ -1,6 +1,6 @@
 import iReact from '../../lib/iReact';
 
-class HelloWorld extends iReact.Component {
+class DynamicHelloWorld extends iReact.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,4 +20,4 @@ class HelloWorld extends iReact.Component {
   }
 }
 
-export default HelloWorld;
+export default DynamicHelloWorld;

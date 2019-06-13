@@ -1,4 +1,4 @@
 import iReactDOM from '../lib/iReact.DOM';
-import DynamicHelloWorld from './components/DynamicHelloWorld';
+import AsyncList from './components/AsyncList';
 
-iReactDOM.render(new DynamicHelloWorld(), document.querySelector('#root'));
+iReactDOM.render(new AsyncList(), document.querySelector('#root'));
