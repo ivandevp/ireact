@@ -9,11 +9,15 @@ class HelloWorld extends iReact.Component {
     };
   }
 
-  render() {
-    this.setState({
-      name: 'Laboratoria'
-    });
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        name: 'Laboratoria'
+      });
+    }, 3000);
+  }
 
+  render() {
     return `
       <h1>Hola ${this.state.name}</h1>
     `;
