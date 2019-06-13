@@ -1,7 +1,11 @@
 class HelloWorld {
+  constructor(props) {
+    this.props = props;
+  }
+
   render() {
     return `
-      <h1>Hola mundo</h1>
+      <h1>Hola ${this.props.name}</h1>
     `;
   }
 }
