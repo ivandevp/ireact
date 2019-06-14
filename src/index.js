@@ -1,4 +1,5 @@
+import iReact from '../lib/iReact';
 import iReactDOM from '../lib/iReact.DOM';
-import AsyncList from './components/AsyncList';
+import HelloWorld from './components/HelloWorld';
 
-iReactDOM.render(new AsyncList(), document.querySelector('#root'));
+iReactDOM.render(<HelloWorld />, document.querySelector('#root'));
